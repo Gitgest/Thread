@@ -5,6 +5,7 @@
  */
 package thread;
 
+import java.awt.Toolkit;
 import static java.lang.Thread.sleep;
 
 /**
@@ -39,6 +40,7 @@ public class StartHere {
                 for (int i = 0; i < 10;
                         i++) {
                     System.out.println("This is thread t2");
+                    Toolkit.getDefaultToolkit().beep();
                     try {
                         sleep(100);
                     } catch (InterruptedException ex) {
